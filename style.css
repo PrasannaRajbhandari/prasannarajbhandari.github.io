@@ -1,47 +1,94 @@
+/* Minimal Light Theme */
+
+:root {
+  --primary-color: #003366;
+  --text-color: #1f1f1f;
+  --background-color: #ffffff;
+  --accent-color: #0056b3;
+  --border-color: #e0e0e0;
+  --font-stack: 'Segoe UI', Roboto, sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fefefe;
-    margin: 0;
-    padding: 0;
-    color: #222;
+  font-family: var(--font-stack);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+section {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+h2 {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.project:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  header, section {
+    padding: 1.5rem 1rem;
   }
-  
-  header {
-    background-color: #003366;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-  }
-  
+
   nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    display: inline-block;
+    margin: 5px 8px;
   }
-  
-  section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  h2 {
-    border-bottom: 2px solid #003366;
-    padding-bottom: 5px;
-  }
-  
-  .project {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #003366;
-    color: white;
-  }
-  
+}
