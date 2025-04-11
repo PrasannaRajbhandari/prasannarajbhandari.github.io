@@ -103,3 +103,37 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+.publication {
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+  background-color: #f9f9f9;
+}
+
+.publication h3 {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.publication p {
+  margin: 0.5rem 0;
+}
+
+.publication a {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.publication a:hover {
+  text-decoration: underline;
+}
+
+.publication-image {
+  max-width: 200px;
+  display: block;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
